@@ -1,0 +1,17 @@
+Question 1: Explain what the following options will do when used with ps:
+• ps -e
+A: Displays all processes.
+• ps -l
+A: Display information associated with the following keywords: uid, pid, ppid, cpu, pri, nice, vsz, rss, mwchan, state, tt, time, and command.
+
+Question 2: Combine ps with grep to get the PID of a process (e.g., FireFox). Then,
+use the kill command to send a SIGTERM signal to that process.
+A: kill $(ps aux | grep '[n]otepad++.exe' | awk '{print $2}')
+
+
+Question 3: How many times message ‘‘Both parent and child reach here" will
+be printed?
+A: 2 times.
+
+Question 4: Explain what the command pstree does.
+A: displays the processes (i.e., executing instances of programs) on the system in the form of a tree diagram
